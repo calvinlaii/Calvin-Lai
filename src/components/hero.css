@@ -1,0 +1,319 @@
+.section-hero {
+    background-color: #f7f7f7;
+}
+
+.container-web {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+
+}
+
+.hero-copy {
+    display: flex;
+    justify-content: space-between;
+    height: 15rem;
+    transform: translateY(24%);
+}
+
+.speciality {
+    position: absolute;
+    right: 18px;
+    font-size: large;
+}
+
+.line p{ /* 8px gap below tagline */
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    text-align: right;
+    font-weight: bold;
+}
+
+.line2 p{
+    margin: 0 0px 0px 22px;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0.10em;
+    text-align: left;
+    font-style: italic;
+}
+
+.line2 h1{
+    font-size: 16rem;
+    letter-spacing: -0.01em;
+    line-height: 0.8;
+    font-family: "chillax", sans-serif;
+}
+
+.line {
+    position: relative;
+}
+
+.line h1{
+    font-size: 16rem;
+    -webkit-user-drag: none;
+    line-height: 0.8;
+    font-family: "chillax", sans-serif;
+}
+
+.contact-me {
+    width: fit-content;
+    transform: translate(95rem, 38rem);
+}
+
+
+.contact-me a {
+    width: 100%;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container-hero {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100svh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+
+.loader {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100svh;
+    overflow: hidden;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    pointer-events: none;
+}
+
+.block1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+}
+
+.block2 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+}
+
+.divider {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.divider2 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(50%);
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.line h1, .line2 h1 {
+  transform: translateY(-120%);
+}
+
+.block1{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  transform: translateY(-49%);
+}
+
+.block2{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  transform: translateY(-50%)
+}
+
+.divider{
+    transform: scaleX(0);
+}
+
+.divider2{
+    transform: scaleX(0);
+}
+
+.hero-img {
+    transform: scale(1.5);
+    will-change: transform;
+}
+
+.about-image {
+  position: absolute;
+  left: 64%;
+  top: -26%;
+  z-index: 20;
+  height: 500px;   /* square size */
+  width: 400px;
+  transform: translateX(-50%);
+  overflow: clip;
+  border-radius: 1.5rem;
+}
+
+.img-header {
+    width: 100vw;
+    height: 72dvh;
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% 40%; /* adjust X% Y% until subject is centered */
+}
+
+.mask-clip-path {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.clock {
+    position: absolute;
+    width: 50%;
+    top: 63%;
+    left: 1%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.contact-me a{
+    color: black;
+}
+
+.another-quote{  
+    position: absolute;  
+    bottom: 500px;
+    right: 30px;
+}
+
+.another-quote p{  
+    font-size: 2vw;
+    letter-spacing: 20px;
+}
+
+@media(max-width: 1000px) {
+
+    .hero-copy{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transform: translate(0px, 100px);
+        gap: 5rem;
+        height: 100px;
+    }
+
+    .line p{
+        display: none;
+    }
+
+    .line2 p{
+        display: none;
+    }
+
+    .line h1{
+        font-size: 50px;
+        display: block;
+        line-height: 1;
+    }
+    
+
+    .line2 h1{
+        font-size: 50px;
+     display: block;
+     line-height: 1;
+    }
+
+    .about-image {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    z-index: 20;
+    height: 320px;   /* square size */
+    width: 350px;
+    overflow: clip;
+    border-radius: 1.5rem;
+    }
+
+    .cta {
+        width: 90%;
+    }
+
+    .clock {
+    display: none;
+    position: absolute;
+    width: 50%;
+    top: 56%;
+    left: 6%;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 15px;
+    letter-spacing: 2px;
+    }
+
+    .img-header {
+    width: 100%;
+    height: 72dvh;
+    }
+
+    .another-quote{  
+    display: none;
+    position: absolute;  
+    bottom: 672px;
+    right: 30px;
+    }
+
+    .another-quote p{  
+    font-size: 3vw;
+    letter-spacing: 5px;
+}
+}
